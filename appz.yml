@@ -4,14 +4,14 @@ app:
     notify: appz@ecloudcontrol.com
 
 build:
-    version: 11.3
+    version: 16.1
     env: DEV
     build_file: none
     output_files: output/*.zip
-    image_template: openproject-11.3
+    image_template: openproject-16.1
 
 deploy:
-    context: alpha/DEV
+    context: anandp0/DEV
     type: statefulset
     replicas: 2
     port:
